@@ -1,7 +1,7 @@
 const productos = [
-  { nombre: "Advil max", precio: "$10.000", imagen: "img/advilmax.jpeg" },
-  { nombre: "Producto 2", precio: "$12.000", imagen: "img/producto2.jpg" },
-  { nombre: "Producto 3", precio: "$9.000", imagen: "img/producto3.jpg" },
+  { nombre: "Advil max", precio: "$10.000", imagen: "https://ibb.co/pBjNS89H" },
+  { nombre: "Producto 2", precio: "$12.000", imagen: "https://ibb.co/GZVSRmJ" },
+  { nombre: "Producto 3", precio: "$9.000", imagen: "https://ibb.co/6qxqk5y" },
 
 
 
