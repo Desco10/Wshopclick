@@ -1,28 +1,273 @@
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+
 .logo-header {
   text-align: center;
-  padding: 15px;
-  background-color: white;
+  padding: 10px;
+  background-color: white; /* Fondo blanco */
 }
+
+.logo {
+  width: 150px; /* Ajusta el tamaño que desees */
+  height: 150px;
+  border-radius: 50%; /* Hace la imagen redonda */
+  object-fit: cover; /* Ajusta la imagen al círculo sin deformarla */
+  border: 3px solid #ddd; /* Opcional: borde gris alrededor */
+}
+
 
 .logo {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.btn-wsp {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-wsp:hover {
+  background-color: #128C7E;
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
   object-fit: cover;
+}
+
+/* HEADER LOGO 
+.logo-header {
+  text-align: center;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  max-width: 180px;
+  height: auto;
+}
+
+/* BANNER PRINCIPAL */
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+/* CARRUSEL DE OFERTAS */
+.ofertas {
+  padding: 15px;
+  background: #fff;
+  margin: 10px 0;
+}
+
+.ofertas h2 {
+  margin-bottom: 10px;
+}
+
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.carrusel div {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.carrusel img {
+  width: 250px;   /* Puedes ajustar este valor */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/**
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+}
+
+.carrusel div {
+  min-width: 300px;
+  flex-shrink: 0;
+}
+
+.carrusel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* CATALOGO */
+.catalogo {
+  padding: 15px;
+}
+
+.catalogo h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background: #25D366;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.card button:hover {
+  background: #1ebe5d;
+}
+
+/* PAGINACION */
+.paginacion {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.paginacion button {
+  padding: 8px 15px;
+  margin: 0 5px;
+  background: #0d9bddea;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.paginacion button:hover {
+  background: #abc3db;
+}
+
+/* BLOG */
+.blog {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+.blog h2 {
+  margin-bottom: 10px;
+}
+
+.blog article {
+  margin-bottom: 15px;
+}
+
+.blog h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* RESPONSIVE ADAPTATIVO */
+@media screen and (max-width: 768px) {
+  .carrusel div {
+    width: 85%;
+  }
+  .card img {
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carrusel div {
+    width: 90%;
+  }
+  .contenedor-productos {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .card img {
+    height: 120px;
+  }
+}
+@media (max-width: 600px) {
+  .carrusel img {
+    width: 180px;
+  }
+}
+
+
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   background-color: white;
   padding: 5px;
   box-shadow: 0 0 12px rgba(59, 174, 224, 0.5);
   animation: titilar 1.2s infinite alternate;
 }
 
-/* Animación de brillo azul titilante */
 @keyframes titilar {
   0% {
-    box-shadow: 0 0 10px rgba(35, 114, 204, 0.9);
+    box-shadow: 0 0 10px rgba(35, 114, 204, 0.904);
     transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 20px rgba(23, 143, 223, 1);
+    box-shadow: 0 0 20px rgb(23, 143, 223);
     transform: scale(1.05);
   }
   100% {
