@@ -17,6 +17,108 @@ const productos = [
     imagen: "img/sevedol_estra.jpeg",
     pagina: "PRODUCTOS/sevedol.html"
   }
+  {
+   nombre: "Advil Max",
+    precio: "$10.000",
+    imagen: "img/advilmax.jpeg",
+    pagina: "PRODUCTOS/advilmax.html"
+  },
+  {
+    nombre: "Bonfiest",
+    precio: "$12.000",
+    imagen: "img/bonfiest.png",
+    pagina: "PRODUCTOS/bonfiest.html"
+  },
+  {
+    nombre: "Sevedol Extra",
+    precio: "$9.000",
+    imagen: "img/sevedol_estra.jpeg",
+    pagina: "PRODUCTOS/sevedol.html"
+  }
+ {
+    nombre: "Advil Max",
+    precio: "$10.000",
+    imagen: "img/advilmax.jpeg",
+    pagina: "PRODUCTOS/advilmax.html"
+  },
+  {
+    nombre: "Bonfiest",
+    precio: "$12.000",
+    imagen: "img/bonfiest.png",
+    pagina: "PRODUCTOS/bonfiest.html"
+  },
+  {
+    nombre: "Sevedol Extra",
+    precio: "$9.000",
+    imagen: "img/sevedol_estra.jpeg",
+    pagina: "PRODUCTOS/sevedol.html"
+  }
+  {
+   nombre: "Advil Max",
+    precio: "$10.000",
+    imagen: "img/advilmax.jpeg",
+    pagina: "PRODUCTOS/advilmax.html"
+  },
+  {
+    nombre: "Bonfiest",
+    precio: "$12.000",
+    imagen: "img/bonfiest.png",
+    pagina: "PRODUCTOS/bonfiest.html"
+  },
+  {
+    nombre: "Sevedol Extra",
+    precio: "$9.000",
+    imagen: "img/sevedol_estra.jpeg",
+    pagina: "PRODUCTOS/sevedol.html"
+  }
+
+  {
+    nombre: "Advil Max",
+    precio: "$10.000",
+    imagen: "img/advilmax.jpeg",
+    pagina: "PRODUCTOS/advilmax.html"
+  },
+  {
+    nombre: "Bonfiest",
+    precio: "$12.000",
+    imagen: "img/bonfiest.png",
+    pagina: "PRODUCTOS/bonfiest.html"
+  },
+  {
+    nombre: "Sevedol Extra",
+    precio: "$9.000",
+    imagen: "img/sevedol_estra.jpeg",
+    pagina: "PRODUCTOS/sevedol.html"
+  }
+  {
+   nombre: "Advil Max",
+    precio: "$10.000",
+    imagen: "img/advilmax.jpeg",
+    pagina: "PRODUCTOS/advilmax.html"
+  },
+  {
+    nombre: "Bonfiest",
+    precio: "$12.000",
+    imagen: "img/bonfiest.png",
+    pagina: "PRODUCTOS/bonfiest.html"
+  },
+  {
+    nombre: "Sevedol Extra",
+    precio: "$9.000",
+    imagen: "img/sevedol_estra.jpeg",
+    pagina: "PRODUCTOS/sevedol.html"
+  }
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 const productosPorPagina = 12;
