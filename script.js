@@ -16,7 +16,7 @@ const productos = [
     precio: "$9.000",
     imagen: "img/sevedol_estra.jpeg",
     pagina: "PRODUCTOS/sevedol.html"
-  }
+  },
   {
    nombre: "Advil Max",
     precio: "$10.000",
@@ -34,7 +34,7 @@ const productos = [
     precio: "$9.000",
     imagen: "img/sevedol_estra.jpeg",
     pagina: "PRODUCTOS/sevedol.html"
-  }
+  },
  {
     nombre: "Advil Max",
     precio: "$10.000",
@@ -52,7 +52,7 @@ const productos = [
     precio: "$9.000",
     imagen: "img/sevedol_estra.jpeg",
     pagina: "PRODUCTOS/sevedol.html"
-  }
+  },
   {
    nombre: "Advil Max",
     precio: "$10.000",
@@ -70,7 +70,7 @@ const productos = [
     precio: "$9.000",
     imagen: "img/sevedol_estra.jpeg",
     pagina: "PRODUCTOS/sevedol.html"
-  }
+  },
 
   {
     nombre: "Advil Max",
@@ -89,7 +89,7 @@ const productos = [
     precio: "$9.000",
     imagen: "img/sevedol_estra.jpeg",
     pagina: "PRODUCTOS/sevedol.html"
-  }
+  },
   {
    nombre: "Advil Max",
     precio: "$10.000",
@@ -107,7 +107,7 @@ const productos = [
     precio: "$9.000",
     imagen: "img/sevedol_estra.jpeg",
     pagina: "PRODUCTOS/sevedol.html"
-  }
+  },
 
 
 
