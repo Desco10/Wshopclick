@@ -3,19 +3,19 @@ const productos = [
     nombre: "Advil Max",
     precio: "$10.000",
     imagen: "img/advilmax.jpeg",
-    pagina: "PRODUCTOS/producto-advilmax.html"
+    pagina: "PRODUCTOS/advilmax.html"
   },
   {
     nombre: "Bonfiest",
     precio: "$12.000",
     imagen: "img/bonfiest.png",
-    pagina: "PRODUCTOS/producto-bonfiest.html"
+    pagina: "PRODUCTOS/bonfiest.html"
   },
   {
     nombre: "Sevedol Extra",
     precio: "$9.000",
     imagen: "img/sevedol_estra.jpeg",
-    pagina: "PRODUCTOS/producto-sevedol.html"
+    pagina: "PRODUCTOS/sevedol.html"
   }
 ];
 
