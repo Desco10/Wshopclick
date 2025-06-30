@@ -1,8 +1,8 @@
 
 const productos = [
-  { nombre: "Advil Max", precio: "$10.000", imagen: "img/advilmax.jpg", link: "productos/producto-advilmax.html" },
-  { nombre: "Bonfiest", precio: "$12.000", imagen: "img/bonfiest.jpg", link: "productos/producto-bonfiest.html" },
-  { nombre: "Sevedol Extra", precio: "$9.000", imagen: "img/sevedol.jpg", link: "productos/producto-sevedol.html" },
+  { nombre: "Advil Max", precio: "$10.000", imagen: "img/advilmax.jpeg", link: "productos/producto-advilmax.html" },
+  { nombre: "Bonfiest", precio: "$12.000", imagen: "img/bonfiest.png", link: "productos/producto-bonfiest.html" },
+  { nombre: "Sevedol Extra", precio: "$9.000", imagen: "img/sevedol_estra.jpeg", link: "productos/producto-sevedol.html" },
 ];
   // más productos aquí...
 
