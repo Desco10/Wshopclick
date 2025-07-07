@@ -1,112 +1,121 @@
 const productos = [
   {
     nombre: "Advil Max",
-    precio: "$10.000",
+    precio: "$20.000  sobre x 10",
     imagen: "img/advilmax.jpeg",
-    pagina: "PRODUCTOS/advilmax.html"
+    pagina: "productos/advilmax.html"
   },
   {
     nombre: "Bonfiest",
-    precio: "$12.000",
+    precio: "$3297  unidad ",
     imagen: "img/bonfiest.png",
-    pagina: "PRODUCTOS/bonfiest.html"
+    pagina: "productos/bonfiest.html"
   },
   {
     nombre: "Sevedol Extra",
-    precio: "$9.000",
+    precio: "$13200  sobre x 12 ",
     imagen: "img/sevedol_estra.jpeg",
-    pagina: "PRODUCTOS/sevedol.html"
+    pagina: "productos/sevedol.html"
   },
   {
-   nombre: "Advil Max",
-    precio: "$10.000",
-    imagen: "img/advilmax.jpeg",
-    pagina: "PRODUCTOS/advilmax.html"
+   nombre: " ACEITE ALMENDRAS",
+    precio: "$1538 unidad ",
+    imagen: "img/ACEITEALMENDRAS.jpg",
+    pagina: "productos/aceitealmendras.html"
   },
   {
-    nombre: "Bonfiest",
-    precio: "$12.000",
-    imagen: "img/bonfiest.png",
-    pagina: "PRODUCTOS/bonfiest.html"
+    nombre: "ACEITE BEBE",
+    precio: "$4000 unidad ",
+    imagen: "img/ACEITEBEBE.jpg",
+    pagina: "productos/aceitebebe.html"
   },
   {
-    nombre: "Sevedol Extra",
-    precio: "$9.000",
-    imagen: "img/sevedol_estra.jpeg",
-    pagina: "PRODUCTOS/sevedol.html"
+    nombre: " ACETAMINOFEN TABLETA",
+    precio: "$9.000 caja x 100",
+    imagen: "img/ACETAMINOFEN.jpg",
+    pagina: "productos/acetaminofentableta.html"
   },
  {
-    nombre: "Advil Max",
-    precio: "$10.000",
-    imagen: "img/advilmax.jpeg",
-    pagina: "PRODUCTOS/advilmax.html"
+    nombre: "Advil Fem",
+    precio: "$22.300 sobre x 10",
+    imagen: "img/AdvilFem.jpeg",
+    pagina: "productos/advilfem.html"
+  },
+
+
+
+
+
+
+  {
+    nombre: "ADVIL GRIPA",
+    precio: "$23980  sobre x 10",
+    imagen: "img/Advilgripa.jpg",
+    pagina: "PRODUCTOS/advilgripa.html"
+  },
+
+
+
+  {
+    nombre: "Advil Gripa max ",
+    precio: "$23170 sobre x 10",
+    imagen: "img/advilgripamax.jpg",
+    pagina: "productos/gripamax.html"
   },
   {
-    nombre: "Bonfiest",
-    precio: "$12.000",
-    imagen: "img/bonfiest.png",
-    pagina: "PRODUCTOS/bonfiest.html"
+   nombre: "AGUA OXIGENADA",
+    precio: "$2179 unidad",
+    imagen: "img/AGUAOXIGENEDA.jpg",
+    pagina: "productos/aguaoxigena.html"
   },
   {
-    nombre: "Sevedol Extra",
-    precio: "$9.000",
-    imagen: "img/sevedol_estra.jpeg",
-    pagina: "PRODUCTOS/sevedol.html"
+    nombre: "ALCOHOL 120 ML",
+    precio: "$2179 unidad ",
+    imagen: "img/ALCOHOL120.jpg",
+    pagina: "productos/alcohol120.html"
   },
   {
-   nombre: "Advil Max",
-    precio: "$10.000",
-    imagen: "img/advilmax.jpeg",
-    pagina: "PRODUCTOS/advilmax.html"
-  },
-  {
-    nombre: "Bonfiest",
-    precio: "$12.000",
-    imagen: "img/bonfiest.png",
-    pagina: "PRODUCTOS/bonfiest.html"
-  },
-  {
-    nombre: "Sevedol Extra",
-    precio: "$9.000",
-    imagen: "img/sevedol_estra.jpeg",
-    pagina: "PRODUCTOS/sevedol.html"
+    nombre: "Alcohol 345 ml",
+    precio: "$3498 unidad ",
+    imagen: "img/ALCOHOL345.jpg",
+    pagina: "productos/alcohol345.html"
   },
 
   {
-    nombre: "Advil Max",
-    precio: "$10.000",
-    imagen: "img/advilmax.jpeg",
-    pagina: "PRODUCTOS/advilmax.html"
+    nombre: "ALGODON 20 gr",
+    precio: "$1498 unidad ",
+    imagen: "img/ALGODON.jpg",
+    pagina: "productos/algodon.html"
   },
   {
     nombre: "Bonfiest",
     precio: "$12.000",
     imagen: "img/bonfiest.png",
-    pagina: "PRODUCTOS/bonfiest.html"
+    pagina: "productos/bonfiest.html"
   },
   {
     nombre: "Sevedol Extra",
     precio: "$9.000",
     imagen: "img/sevedol_estra.jpeg",
-    pagina: "PRODUCTOS/sevedol.html"
+    pagina: "productos/sevedol.html"
   },
   {
    nombre: "Advil Max",
     precio: "$10.000",
     imagen: "img/advilmax.jpeg",
-    pagina: "PRODUCTOS/advilmax.html"
+    pagina: "productos/advilmax.html"
   },
   {
     nombre: "Bonfiest",
     precio: "$12.000",
     imagen: "img/bonfiest.png",
-    pagina: "PRODUCTOS/bonfiest.html"
+    pagina: "productos/bonfiest.html"
   },
   {
     nombre: "Sevedol Extra",
     precio: "$9.000",
     imagen: "img/sevedol_estra.jpeg",
-    pagina: "PRODUCTOS/sevedol.html"
+    pagina: "productos/sevedol.html"
   },
 
 
