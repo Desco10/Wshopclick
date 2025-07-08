@@ -141,35 +141,25 @@ function mostrarProductos() {
   const fin = inicio + productosPorPagina;
   const productosPagina = productos.slice(inicio, fin);
 
-  //*productosPagina.forEach(prod => {
-    //const card = document.createElement("div");
-    //card.className = "card";
-   // card.innerHTML = `
-      //<img src="${prod.imagen}" alt="${prod.nombre}">
-     // <h3>${prod.nombre}</h3>
-      //<p>${prod.precio}</p>
-      //<a href="https://wa.me/573143416441?text=Hola , quiero  comprar este producto: ${prod.nombre}%0AValor: ${prod.precio}%0A${window.location.origin}/${prod.pagina}"
-       //  target="_blank" class="btn-wsp">COMPRAR</a>
-    //`;
-    //contenedor.appendChild(card);//*
-  //});//**
+    productosPagina.forEach(prod => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <img src="${prod.imagen}" alt="${prod.nombre}">
+      <h3>${prod.nombre}</h3>
+      <p>${prod.precio}</p>
+      <a href="https://wa.me/573143416441?text=Hola , quiero  comprar este producto: ${prod.nombre}%0AValor: ${prod.precio}%0A${window.location.origin}/${prod.pagina}"
+         target="_blank" class="btn-wsp">
+        <i class="fab fa-whatsapp"></i> COMPRAR
+    
+    `;
+    contenedor.appendChild(card);
+  });
 
 
 
-productosPagina.forEach(prod => {
-  const card = document.createElement("div");
-  card.className = "card";
-  card.innerHTML = `
-    <img src="${prod.imagen}" alt="${prod.nombre}">
-    <h3>${prod.nombre}</h3>
-    <p>${prod.precio}</p>
-    <a href="https://wa.me/573143416441?text=Hola, quiero este producto: ${prod.nombre}%0AValor: ${prod.precio}" 
-       target="_blank" class="btn-wsp">
-      <i class="fab fa-whatsapp"></i> COMPRAR
-    </a>
-  `;
-  contenedor.appendChild(card);
-});
+
+
 
 
 
