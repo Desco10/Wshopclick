@@ -172,6 +172,10 @@ function siguientePagina() {
   if (paginaActual < totalPaginas) {
     paginaActual++;
     mostrarProductos();
+    window.scrollTo({
+      top: document.querySelector(".catalogo").offsetTop,
+      behavior: 'smooth'
+    });
   }
 }
 
@@ -179,7 +183,9 @@ function anteriorPagina() {
   if (paginaActual > 1) {
     paginaActual--;
     mostrarProductos();
+    window.scrollTo({
+      top: document.querySelector(".catalogo").offsetTop,
+      behavior: 'smooth'
+    });
   }
 }
-
-mostrarProductos();
