@@ -148,6 +148,7 @@ function mostrarProductos() {
       <img src="${prod.imagen}" alt="${prod.nombre}">
       <h3>${prod.nombre}</h3>
       <p>${prod.precio}</p>
+      <a href="producto.html?nombre=${encodeURIComponent(prod.nombre)}&valor=${prod.precio}&imagen=${prod.imagen}" class="fab fa-whatsapp"></i> COMPRAR    
       <a href="https://wa.me/573143416441?text=Hola , quiero  comprar este producto: ${prod.nombre}%0AValor: ${prod.precio}%0A${window.location.origin}/${prod.pagina}"
          target="_blank" class="btn-wsp">
         <i class="fab fa-whatsapp"></i> COMPRAR
