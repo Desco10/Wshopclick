@@ -223,18 +223,30 @@ function resaltarItemCentral() {
 
   items.forEach((item) => {
     const itemCenter = item.offsetLeft + item.clientWidth / 2;
-    item.classList.toggle("active", Math.abs(centro - itemCenter) < item.clientWidth / 2);
- 
+    const isActive = Math.abs(centro - itemCenter) < item.clientWidth / 2;
+
+    item.classList.toggle("active", isActive);
+
+    if (isActive) {
+      const img = item.querySelector("img");
+      const nombre = img.getAttribute("data-nombre");
+      const precio = img.getAttribute("data-precio");
+
+      // Evitar múltiples listeners acumulados
+      item.onclick = () => {
+        window.open(`https://wa.me/573143416441?text=Hola, quiero comprar este producto: ${nombre}%0AValor: ${precio}`, "_blank");
+      };
+    } else {
+      item.onclick = null;
+    }
   });
-
-function irACatalogo() {
-  document.querySelector(".catalogo").scrollIntoView({ behavior: 'smooth' });
 }
 
 
 
 
-}
+
+
 
 
 
