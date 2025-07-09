@@ -196,3 +196,51 @@ function anteriorPagina() {
     });
   }
 }
+
+
+const carrusel = document.getElementById("carrusel");
+let items = carrusel.querySelectorAll(".item");
+
+// Duplicar elementos para crear bucle infinito
+carrusel.innerHTML += carrusel.innerHTML;
+items = carrusel.querySelectorAll(".item");
+
+let position = 0;
+const velocidad = 1; // px por ciclo
+const anchoTotal = carrusel.scrollWidth / 2;
+
+function moverCarrusel() {
+  position += velocidad;
+  if (position >= anchoTotal) position = 0;
+  carrusel.scrollLeft = position;
+
+  resaltarItemCentral();
+}
+
+// Detectar el item más centrado visualmente
+function resaltarItemCentral() {
+  const centro = carrusel.scrollLeft + carrusel.clientWidth / 2;
+
+  items.forEach((item) => {
+    const itemCenter = item.offsetLeft + item.clientWidth / 2;
+    item.classList.toggle("active", Math.abs(centro - itemCenter) < item.clientWidth / 2);
+ 
+  });
+
+function irACatalogo() {
+  document.querySelector(".catalogo").scrollIntoView({ behavior: 'smooth' });
+}
+
+
+
+
+}
+
+
+
+setInterval(moverCarrusel, 10); // ajusta velocidad
+
+document.addEventListener("DOMContentLoaded", () => {
+  mostrarProductos();
+});
+ 

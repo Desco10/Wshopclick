@@ -38,6 +38,21 @@ body {
   100% { box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); transform: scale(1); }
 }
 
+
+ .bienvenida {
+  text-align: center;
+  padding: 20px;
+}
+
+.bienvenida h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #0d99df;
+}
+
+
+
+
 /* Banner */
 .banner img {
   width: 100%;
@@ -179,30 +194,46 @@ body {
   font-size: 18px;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .carrusel div {
-    width: 85%;
-  }
-  .card img {
-    height: 160px;
-  }
+.carrusel {
+  display: flex;
+  overflow-x: hidden;
+  gap: 16px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  position: relative;
 }
 
-@media screen and (max-width: 480px) {
-  .carrusel div {
-    width: 90%;
-  }
-  .contenedor-productos {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  }
-  .card img {
+.item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item img {
+  width: 280px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  background: #fff;
+}
+
+.item.active {
+  transform: scale(1.15);
+  box-shadow: 0 12px 30px rgba(0, 180, 255, 0.5);
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .item img {
+    width: 200px;
     height: 140px;
   }
 }
 
-@media (max-width: 600px) {
-  .carrusel img {
-    width: 180px;
+@media screen and (max-width: 480px) {
+  .item img {
+    width: 140px;
+    height: 100px;
   }
 }
