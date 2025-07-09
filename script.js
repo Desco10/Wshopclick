@@ -18,24 +18,8 @@ const productos = [
     imagen: "img/sevedol_estra.jpeg",
     pagina: "productos/sevedol.html"
   },
-  {
-   nombre: " ACEITE ALMENDRAS",
-    precio: "$1538 unidad ",
-    imagen: "img/ACEITEALMENDRAS.jpg",
-    pagina: "productos/aceitealmendras.html"
-  },
-  {
-    nombre: "ACEITE BEBE",
-    precio: "$4000 unidad ",
-    imagen: "img/ACEITEBEBE.jpg",
-    pagina: "productos/aceitebebe.html"
-  },
-  {
-    nombre: " ACETAMINOFEN TABLETA",
-    precio: "$9.000 caja x 100",
-    imagen: "img/ACETAMINOFEN.jpg",
-    pagina: "productos/acetaminofentableta.html"
-  },
+  
+  
  {
     nombre: "Advil Fem",
     precio: "$22.300 sobre x 10",
@@ -69,25 +53,10 @@ const productos = [
     imagen: "img/AGUAOXIGENEDA.jpg",
     pagina: "productos/aguaoxigena.html"
   },
-  {
-    nombre: "ALCOHOL 120 ML",
-    precio: "$2179 unidad ",
-    imagen: "img/alcoholpeque.jpg",
-    pagina: "productos/alcoholpeque.html"
-  },
-  {
-    nombre: "Alcohol 345 ml",
-    precio: "$3498 unidad ",
-    imagen: "img/alcoholmedi.jpg",
-    pagina: "productos/alcoholmedi.html"
-  },
+ 
+  
 
-  {
-    nombre: "ALGODON 20 gr",
-    precio: "$1498 unidad ",
-    imagen: "img/ALGODON.jpg",
-    pagina: "productos/algodon.html"
-  },
+ 
   {
     nombre: "Bonfiest",
     precio: "$12.000",
@@ -120,7 +89,38 @@ const productos = [
   },
 
 
+ {
+    nombre: "ADVIL GRIPA",
+    precio: "$23980  sobre x 10",
+    imagen: "img/Advilgripa.jpg",
+    pagina: "PRODUCTOS/advilgripa.html"
+  },
 
+
+
+  {
+    nombre: "Advil Gripa max ",
+    precio: "$23170 sobre x 10",
+    imagen: "img/advilgripamax.jpg",
+    pagina: "productos/gripamax.html"
+  },
+  {
+   nombre: "AGUA OXIGENADA",
+    precio: "$2179 unidad",
+    imagen: "img/AGUAOXIGENEDA.jpg",
+    pagina: "productos/aguaoxigena.html"
+  },
+ 
+  
+
+ 
+  {
+    nombre: "Bonfiest",
+    precio: "$12.000",
+    imagen: "img/bonfiest.png",
+    pagina: "productos/bonfiest.html"
+  },
+  
 
 
 
