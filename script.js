@@ -72,14 +72,14 @@ const productos = [
   {
     nombre: "ALCOHOL 120 ML",
     precio: "$2179 unidad ",
-    imagen: "img/ALCOHOL120.jpg",
-    pagina: "productos/alcohol120.html"
+    imagen: "img/alcoholpeque.jpg",
+    pagina: "productos/alcoholpeque.html"
   },
   {
     nombre: "Alcohol 345 ml",
     precio: "$3498 unidad ",
-    imagen: "img/ALCOHOL345.jpg",
-    pagina: "productos/alcohol345.html"
+    imagen: "img/alcoholmedi.jpg",
+    pagina: "productos/alcoholmedi.html"
   },
 
   {
