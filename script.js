@@ -163,14 +163,6 @@ function mostrarProductos() {
     contenedor.appendChild(card);
   });
 
-
-
-
-
-
-
-
-
   document.getElementById("paginaActual").textContent = `Página ${paginaActual}`;
 }
 
@@ -201,23 +193,21 @@ function anteriorPagina() {
 const carrusel = document.getElementById("carrusel");
 let items = carrusel.querySelectorAll(".item");
 
-// Duplicar elementos para crear bucle infinito
+// Duplicar carrusel para bucle infinito
 carrusel.innerHTML += carrusel.innerHTML;
 items = carrusel.querySelectorAll(".item");
 
 let position = 0;
-const velocidad = 1; // px por ciclo
+const velocidad = 0.5;
 const anchoTotal = carrusel.scrollWidth / 2;
 
 function moverCarrusel() {
   position += velocidad;
   if (position >= anchoTotal) position = 0;
   carrusel.scrollLeft = position;
-
   resaltarItemCentral();
 }
 
-// Detectar el item más centrado visualmente
 function resaltarItemCentral() {
   const centro = carrusel.scrollLeft + carrusel.clientWidth / 2;
 
@@ -231,10 +221,12 @@ function resaltarItemCentral() {
       const img = item.querySelector("img");
       const nombre = img.getAttribute("data-nombre");
       const precio = img.getAttribute("data-precio");
+      const pagina = img.getAttribute("data-pagina");
 
-      // Evitar múltiples listeners acumulados
       item.onclick = () => {
-        window.open(`https://wa.me/573143416441?text=Hola, quiero comprar este producto: ${nombre}%0AValor: ${precio}`, "_blank");
+        const urlCatalogo = `${window.location.origin}/${pagina}`;
+        const mensaje = `Hola, quiero comprar este producto: ${nombre}%0AValor: ${precio}%0A${urlCatalogo}`;
+        window.open(`https://wa.me/573143416441?text=${mensaje}`, "_blank");
       };
     } else {
       item.onclick = null;
@@ -242,17 +234,10 @@ function resaltarItemCentral() {
   });
 }
 
+setInterval(moverCarrusel, 10); // movimiento constante
 
 
-
-
-
-
-
-
-setInterval(moverCarrusel, 10); // ajusta velocidad
 
 document.addEventListener("DOMContentLoaded", () => {
   mostrarProductos();
 });
- 
