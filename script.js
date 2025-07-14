@@ -167,7 +167,8 @@ function mostrarProductos() {
 }
 
 function siguientePagina() {
-  const totalPaginas = Math.ceil(productos.length / productosPorPagina);
+  const productosParaMostrar = productosFiltrados !== null ? productosFiltrados : productos;
+  const totalPaginas = Math.ceil(productosParaMostrar.length / productosPorPagina);
   if (paginaActual < totalPaginas) {
     paginaActual++;
     mostrarProductos();
@@ -189,6 +190,8 @@ function anteriorPagina() {
   }
 }
 
+
+let productosFiltrados = null;
 
 const carrusel = document.getElementById("carrusel");
 let items = carrusel.querySelectorAll(".item");
@@ -243,12 +246,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+// BUSCADOR 
 function filtrarProductos() {
-  const textoBusqueda = document.getElementById("buscador").value.toLowerCase();
-
+  const textoBusqueda = document.getElementById("buscador").value.toLowerCase().trim();
   const contenedor = document.getElementById("productos");
   contenedor.innerHTML = "";
+
+  // Si el campo de búsqueda está vacío, volver a mostrar todo el catálogo normal
+  if (textoBusqueda === "") {
+    mostrarProductos();
+    return;
+  }
 
   const productosFiltrados = productos.filter(prod =>
     prod.nombre.toLowerCase().includes(textoBusqueda)

@@ -104,42 +104,60 @@ body {
 
 .contenedor-productos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* más anchas */
+  gap: 12px; /* menos espacio entre cards */
+  padding: 20px;
+  justify-items: center;
 }
 
 .card {
   background: #fff;
   border-radius: 8px;
-  padding: 10px;
+  padding: 12px;
   text-align: center;
   box-shadow: 0 1px 4px rgba(0,0,0,0.15);
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 280px;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .card img {
   width: 100%;
-  height: 140px;
+  max-height: 220px;   /* subimos de 140px a 160px */
   object-fit: contain;
   border-radius: 6px;
   background: #fff;
+  margin: 0 auto;
+  display: block;
 }
+
+
+
+
 
 .card h3 {
   margin: 10px 0 5px;
   font-size: 16px;
+  min-height: 40px;  /* 👉 asegura altura uniforme */
+  overflow: hidden;
 }
 
 .card p {
   font-size: 14px;
+  color: #444;
   margin-bottom: 10px;
+  min-height: 20px; /* 👉 asegura espacio para precio */
 }
 
-/* Botón WhatsApp */
+
 .card .btn-wsp {
   display: inline-block;
   padding: 10px 15px;
@@ -148,13 +166,51 @@ body {
   text-decoration: none;
   border-radius: 6px;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: auto;  /* Este truco lleva el botón abajo */
   transition: background-color 0.3s;
 }
+
 
 .card .btn-wsp:hover {
   background-color: #84b2e4;
 }
+
+/* Responsive tablets */
+@media screen and (max-width: 768px) {
+  .contenedor-productos {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* más anchas en tablet también */
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .card {
+    height: 260px;
+    max-width: 180px;
+  }
+
+  .card img {
+    height: 110px;
+  }
+}
+
+/* Responsive móviles */
+@media screen and (max-width: 480px) {
+  .contenedor-productos {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .card {
+    height: 240px;
+    max-width: 150px;
+  }
+
+  .card img {
+    height: 100px;
+  }
+}
+
 
 /* Paginación */
 .paginacion {
@@ -305,6 +361,11 @@ body {
 }
  
 
+.buscador-catalogo {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .buscador-catalogo input {
   width: 80%;
   max-width: 400px;
@@ -317,6 +378,15 @@ body {
   transition: all 0.3s ease;
   background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="gray" height="18" viewBox="0 0 24 24" width="18"><circle cx="12" cy="12" r="5"/></svg>') no-repeat 12px center;
   background-size: 16px;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  .buscador-catalogo input {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px 14px 10px 38px;
+  }
 }
 
 
