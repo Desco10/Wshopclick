@@ -241,3 +241,35 @@ setInterval(moverCarrusel, 10); // movimiento constante
 document.addEventListener("DOMContentLoaded", () => {
   mostrarProductos();
 });
+
+
+
+function filtrarProductos() {
+  const textoBusqueda = document.getElementById("buscador").value.toLowerCase();
+
+  const contenedor = document.getElementById("productos");
+  contenedor.innerHTML = "";
+
+  const productosFiltrados = productos.filter(prod =>
+    prod.nombre.toLowerCase().includes(textoBusqueda)
+  );
+
+  if (productosFiltrados.length === 0) {
+    contenedor.innerHTML = "<p>No se encontraron productos.</p>";
+  } else {
+    productosFiltrados.forEach(prod => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <img src="${prod.imagen}" alt="${prod.nombre}">
+        <h3>${prod.nombre}</h3>
+        <p>${prod.precio}</p>
+        <a href="https://wa.me/573143416441?text=Hola, quiero comprar este producto: ${prod.nombre}%0AValor: ${prod.precio}%0A${window.location.origin}/${prod.pagina}"
+           target="_blank" class="btn-wsp">
+          <i class="fab fa-whatsapp"></i> COMPRAR
+        </a>
+      `;
+      contenedor.appendChild(card);
+    });
+  }
+}

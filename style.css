@@ -10,17 +10,29 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f9f9f9;
-  color: #0b3cea;
+  color: #07080a;
 }
 
 /* Header Logo */
 .logo-header {
-  text-align: center;
-  padding: 10px;
-  background-color: white;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
+.banner-img {
+  width: 100%;
+  height: 200px; /* puedes ajustar este valor */
+  object-fit: cover;
+  display: block;
+}
+
+/* Logo sobre el banner */
 .logo {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -31,13 +43,12 @@ body {
   animation: titilar 1.2s infinite alternate;
 }
 
-/* Logo animación */
+/* Animación del logo (sin tocarla) */
 @keyframes titilar {
   0% { box-shadow: 0 0 10px rgba(35, 114, 204, 0.9); transform: scale(1); }
   50% { box-shadow: 0 0 20px rgb(23, 143, 223); transform: scale(1.05); }
   100% { box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); transform: scale(1); }
 }
-
 
  .bienvenida {
   text-align: center;
@@ -53,11 +64,20 @@ body {
 
 
 
-/* Banner */
+.banner {
+  width: 100%;
+  overflow: hidden;
+}
+
 .banner img {
   width: 100%;
+  height: auto;
   display: block;
+  max-height: 80px; /* controla lo delgado aquí */
+  object-fit: cover;
 }
+
+
 
 /* Ofertas carrusel */
 .ofertas {
@@ -70,25 +90,7 @@ body {
   margin-bottom: 10px;
 }
 
-.carrusel {
-  display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  padding: 10px;
-  scroll-snap-type: x mandatory;
-}
 
-.carrusel div {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-}
-
-.carrusel img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
 
 /* Catálogo */
 .catalogo {
@@ -121,7 +123,7 @@ body {
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 140px;
   object-fit: contain;
   border-radius: 6px;
   background: #fff;
@@ -141,7 +143,7 @@ body {
 .card .btn-wsp {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #25D366;
+  background-color: #0ddef5;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -151,7 +153,7 @@ body {
 }
 
 .card .btn-wsp:hover {
-  background-color: #128C7E;
+  background-color: #84b2e4;
 }
 
 /* Paginación */
@@ -204,91 +206,117 @@ body {
 }
 
 .item {
+  position: relative;
   flex: 0 0 auto;
   scroll-snap-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: 20px;  /*  Le damos bordes redondeados a la card */
+  overflow: hidden;     /*  Para que la imagen no se salga de los bordes */
 }
 
 .item img {
-  width: 280px;
-  height: 200px;
+  width: 200px;
+  height: 150px;
   object-fit: contain;
-  border-radius: 12px;
-  transition: transform 0.4s, box-shadow 0.4s;
+  border-radius: 20px;
   background: #fff;
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
-.item.active {
-  transform: scale(1.15);
-  box-shadow: 0 12px 30px rgba(0, 180, 255, 0.5);
+/* Cinta superior */
+.item .cinta {
+  position: absolute;
+  bottom: 4px;              /* 👈 La bajamos un poquito más */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e91e63;
+  color: #fff;
+  padding: 2px 10px;        /* 👈 Menos alto y más estrecho horizontal */
+  font-size: 11px;          /* 👈 Texto más pequeño si quieres */
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   z-index: 3;
+  white-space: nowrap;
 }
 
+
+
+/* Imagen activa del centro */
+.item.active {
+  transform: scale(1.2);
+  box-shadow: 0 16px 40px rgba(0, 180, 255, 0.5);
+  z-index: 3;
+  opacity: 1;
+}
+.item.active img {
+  border-radius: 20px; /* 👈 Más redondeado cuando está activa */
+}
+
+/* Imagenes laterales (no activas) */
+.item:not(.active) {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+/* Responsive */
 @media screen and (max-width: 768px) {
   .item img {
-    width: 200px;
-    height: 140px;
+    width: 160px;
+    height: 120px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .item img {
-    width: 140px;
-    height: 100px;
+    width: 120px;
+    height: 90px;
   }
+}
+
+.footer {
+  background-color: #0d99df;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+.footer .social-icons {
+  margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #ffeb3b;
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
 }
  
 
-.carrusel .item {
-  flex: 0 0 auto;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-
-.carrusel .item.active {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
-}
-
-
-
-.item {
-  position: relative;
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-
-.item img {
-  width: 280px;
-  height: 200px;
-  object-fit: contain;
-  border-radius: 12px;
-  transition: transform 0.4s, box-shadow 0.4s;
-  background: #fff;
-}
-
-.item .cinta {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  background: #e91e63;
-  color: #fff;
-  padding: 4px 10px;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  z-index: 5;
-  transform: none; /* Sin rotación para estilo moderno */
+.buscador-catalogo input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px 16px 12px 40px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: #fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="gray" height="18" viewBox="0 0 24 24" width="18"><circle cx="12" cy="12" r="5"/></svg>') no-repeat 12px center;
+  background-size: 16px;
 }
 
 
-
-.item.active {
-  transform: scale(1.15);
-  box-shadow: 0 12px 30px rgba(0, 180, 255, 0.5);
-  z-index: 3;
-}
