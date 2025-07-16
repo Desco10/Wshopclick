@@ -3,7 +3,7 @@ const productos = [
     {
     nombre: "Advil Max",
     precio: "$20.000  sobre x 10",
-    imagen: "img/advilmax.jpeg",
+    imagen: "img/Advimax.jpg",
     pagina: "productos/advilmax.html"
   },
   {
@@ -15,7 +15,7 @@ const productos = [
   {
     nombre: "Sevedol Extra",
     precio: "$13200  sobre x 12 ",
-    imagen: "img/sevedol_estra.jpeg",
+    imagen: "img/sevedolrojo.jpg",
     pagina: "productos/sevedol.html"
   },
   
@@ -58,16 +58,16 @@ const productos = [
 
  
   {
-    nombre: "Bonfiest",
+    nombre: " XRAYDOL",
     precio: "$12.000",
-    imagen: "img/bonfiest.png",
-    pagina: "productos/bonfiest.html"
+    imagen: "img/xraydol.jpg",
+    pagina: "productos/xraydol.html"
   },
   {
-    nombre: "Sevedol Extra",
+    nombre: "PAX BEBIDA CALIENTE NOCHE ",
     precio: "$9.000",
-    imagen: "img/sevedol_estra.jpeg",
-    pagina: "productos/sevedol.html"
+    imagen: "img/pax.jpg",
+    pagina: "productos/pax.html"
   },
   {
    nombre: "Advil Max",
