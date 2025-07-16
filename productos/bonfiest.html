@@ -4,50 +4,59 @@
 <head>
   <meta charset="UTF-8">
   <title>Redirigiendo a WSHOPCLICK...</title>
-  <!--<meta http-equiv="refresh" content="1;url=https://wshopclick.netlify.app">  -->
-  
+
   <!-- METADATOS PARA WHATSAPP -->
-  <meta property="og:title" content="BONFIEST ">
+  <meta property="og:title" content="BONFIEST">
   <meta property="og:description" content="Compra rápida de BONFIEST en WSHOPCLICK.">
   <meta property="og:image" content="https://wshopclick.netlify.app/img/bonfiest.png">
   <meta property="og:url" content="https://wshopclick.netlify.app">
   <meta property="og:type" content="website">
 
   <style>
-
-body {
+    body {
       background-color: #f4f4f4;
       color: #333;
       font-family: 'Segoe UI', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
       margin: 0;
       text-align: center;
       padding: 20px;
     }
 
-    h1 {
-      font-size: 42px;
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #fff;
+      box-shadow: 0 0 12px rgba(59, 174, 224, 0.5);
+      margin-top: 20px;
       margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 16px;
       color: #0d99df;
     }
 
     p {
-      font-size: 24px;
-      margin-bottom: 30px;
+      font-size: 22px;
+      margin-bottom: 25px;
     }
 
     a {
       display: inline-block;
-      padding: 18px 32px;
+      padding: 16px 30px;
       background-color: #0d99df;
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 22px;
+      font-size: 20px;
       transition: background 0.3s;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
@@ -56,36 +65,51 @@ body {
       background-color: #097bbf;
     }
 
-    img {
-      width: 350px;
-      max-width: 90%;
+    .producto-img {
+      width: 400px;
+      max-width: 95%;
       border-radius: 16px;
       margin-bottom: 30px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
 
     @media (max-width: 600px) {
+      .logo {
+        width: 70px;
+        height: 70px;
+      }
+
       h1 {
         font-size: 32px;
       }
+
       p {
-        font-size: 20px;
+        font-size: 18px;
       }
+
       a {
-        font-size: 20px;
-        padding: 16px 28px;
+        font-size: 18px;
+        padding: 14px 26px;
+      }
+
+      .producto-img {
+        width: 90%;
       }
     }
   </style>
-
 </head>
+
 <body>
 
-  <img src="../img/bonfiest.png" alt="BONFIEST">
+  <!-- Logo -->
+  <img src="../img/logo.png" alt="Logo" class="logo">
+
+  <!-- Imagen producto -->
+  <img src="../img/bonfiest.png" alt="BONFIEST" class="producto-img">
+
   <h1>¡Gracias por tu interés!</h1>
   <p>👇 Haz clic en el botón para regresar al catálogo y seguir comprando 👇</p>
   <a href="https://wshopclick.netlify.app">Volver al catálogo 📦</a>
 
 </body>
 </html>
-
