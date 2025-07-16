@@ -28,14 +28,28 @@
     }
 
     .logo {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      object-fit: cover;
-      background: #fff;
-      box-shadow: 0 0 12px rgba(59, 174, 224, 0.5);
-      margin-top: 20px;
-      margin-bottom: 20px;
+      .logo {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 0 12px rgba(59, 174, 224, 0.5);
+  animation: titilar 1.2s infinite alternate;
+}
+
+/* Animación del logo (sin tocarla) */
+@keyframes titilar {
+  0% { box-shadow: 0 0 10px rgba(35, 114, 204, 0.9); transform: scale(1); }
+  50% { box-shadow: 0 0 20px rgb(23, 143, 223); transform: scale(1.05); }
+  100% { box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); transform: scale(1); }
+}
+
     }
 
     h1 {
@@ -56,7 +70,7 @@
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 20px;
+      font-size: 25px;
       transition: background 0.3s;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
@@ -93,7 +107,7 @@
       }
 
       .producto-img {
-        width: 90%;
+        width: 95%;
       }
     }
   </style>
@@ -107,7 +121,7 @@
   <!-- Imagen producto -->
   <img src="../img/bonfiest.png" alt="BONFIEST" class="producto-img">
 
-  <h1>¡Gracias por tu Compra , DIOS Bendiga tu negocio !</h1>
+  <h1>¡Gracias por tu Compra , DIOS te  Bendiga !</h1>
   <p>👇 Haz clic en el botón para regresar al catálogo y seguir comprando 👇</p>
   <a href="https://wshopclick.netlify.app">Volver al catálogo 📦</a>
 
