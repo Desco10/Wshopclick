@@ -73,9 +73,9 @@ body {
 
 .banner img  {
   width: 100%;
-  height: auto;
+  height: 250px;
   display: block;
-  max-height: 100px; /* controla lo delgado aquí */
+  max-height: 120px; /* controla lo delgado aquí */
   object-fit: cover;
 }
 
