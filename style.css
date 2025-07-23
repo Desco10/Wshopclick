@@ -74,7 +74,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  max-height: 80px; /* controla lo delgado aquí */
+  max-height: 100px; /* controla lo delgado aquí */
   object-fit: cover;
 }
 
