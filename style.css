@@ -75,16 +75,13 @@ body {
 
 
 .banner img  {
-  /*width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   max-height: 120px; /* controla lo delgado aquí */
- /* object-fit: cover;*/
-
-   width: 100%;
-  height: 250px; /* Ajusta según tu necesidad */
   object-fit: cover;
-  display: block;
+
+  
 }
 
 
