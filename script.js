@@ -124,16 +124,6 @@ const productos = [
 
 
 
-
-
-
-
-
-
-
-
-
-
 ];
 
 const productosPorPagina = 12;
